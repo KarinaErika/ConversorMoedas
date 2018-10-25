@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valor_em_real"
+        android:layout_gravity="center"
+        android:textSize="25sp"/> <!--O sp permite que o app modifique o tamanho de fonte de acordo com o que o usuário colocou no seu dispositivo !-->
+
+    <EditText
+        android:id="@+id/edit_value"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/valor"
+        android:inputType="numberSigned"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="30sp"/> <!-- Usa-se dp pois o próprio android faz calculopara determinar quantos pixels para determinado elemento dependendo da densidade da tela. Recomendado para imagens e botões!-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/valor_em_dolar" />
+
+    <TextView
+        android:id="@+id/text_dolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"
+        android:padding="10dp"/><!--ctrl + y remove a linha. Shift + alt + seta move a linha!-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/valor_em_euro" />
+
+    <TextView
+        android:id="@+id/text_euro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:textColor="@color/colorAccent"/><!--ctrl + y remove a linha. Shift + alt + seta move a linha!-->
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorLight"
+        android:text="@string/calcular"/>
+
+</LinearLayout>
